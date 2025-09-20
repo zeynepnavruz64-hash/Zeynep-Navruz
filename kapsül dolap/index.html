@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dijital Kapsül Dolap</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#" class="logo">KapsülDolap</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Ana Sayfa</a></li>
+      <li><a href="#features">Özellikler</a></li>
+      <li><a href="#wardrobe">Dolabım</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="hero">
+    <div class="hero-text">
+      <h1>Dijital Kapsül Dolap</h1>
+      <p>Elindeki kıyafetlerle sürdürülebilir ve şık kombinler oluştur. Her gün yeni bir fikir!</p>
+      <button onclick="document.getElementById('wardrobe').scrollIntoView({behavior: 'smooth'})">Dolabımı Göster</button>
+    </div>
+    <div class="hero-image">
+      <img src="hero-image.png" alt="Kombin Önerileri">
+    </div>
+  </header>
+
+  <!-- Özellikler -->
+  <section id="features">
+    <h2>📌 Özelliklerimiz</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>👕 Kıyafet Yükleme</h3>
+        <p>Bilgisayarından kıyafet görsellerini yükleyip dolabına ekle.</p>
+      </div>
+      <div class="card">
+        <h3>📍 Gideceğin Yeri Seç</h3>
+        <p>İş, Okul, Spor, Parti veya Günlük için uygun kombin önerisi al.</p>
+      </div>
+      <div class="card">
+        <h3>👗 Kombin Önerisi</h3>
+        <p>Her gün farklı kombin fikri ile stilini geliştirebilirsin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dolabım ve Kombin -->
+  <section id="wardrobe">
+    <h2>🧥 Dolabım</h2>
+    <input type="file" id="fileInput" multiple>
+    <div id="destination">
+      <h3>📍 Gideceğin Yeri Seç</h3>
+      <select id="placeSelect">
+        <option value="gunluk">Günlük</option>
+        <option value="is">İş</option>
+        <option value="okul">Okul</option>
+        <option value="spor">Spor</option>
+        <option value="parti">Parti</option>
+      </select>
+    </div>
+    <div id="wardrobeItems"></div>
+    <div id="suggestion"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

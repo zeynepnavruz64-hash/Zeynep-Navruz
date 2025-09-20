@@ -1,0 +1,155 @@
+/* Genel ayarlar */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #4a90e2;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #a2d2ff;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+}
+.logo:hover {
+  color: #8ec9ff;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #a2d2ff, #7ec0ee);
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #4a90e2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #d0e7ff;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  margin: 20px auto;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius:10px;
+}
+
+/* Özellikler */
+#features {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f5faff;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Dolabım */
+#wardrobe {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e0f0ff;
+  border-top: 2px solid #a2d2ff;
+}
+
+#fileInput, #placeSelect {
+  margin: 15px auto;
+  display: block;
+}
+
+#wardrobeItems img {
+  width: 100px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+#suggestion {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
